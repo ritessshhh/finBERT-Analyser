@@ -13,8 +13,8 @@ def main():
     print(f"Train examples: {len(dataset['train'])}")
     print(f"Test examples: {len(dataset['test'])}")
 
-    # Use RoBERTa Large as requested
-    model_name = "roberta-large"
+    # Use DeBERTa-v3-Large as requested
+    model_name = "microsoft/deberta-v3-large"
     print(f"Loading model: {model_name}")
     
     tokenizer = AutoTokenizer.from_pretrained(model_name)
